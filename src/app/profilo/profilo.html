@@ -1,0 +1,16 @@
+<div class="profilo">
+  <img [src]="immagine" [width]="larghezzaImmagine" alt="Foto di {{ nome }}">
+
+  <h2>{{ nome }}</h2>
+  <p>Ruolo: {{ ruolo }}</p>
+  <p>Età: {{ eta }}</p>
+  <p>Stato: {{ stato }}</p>
+  <p>Numero di click: {{ numeroClick }}</p>
+
+  <div class="bottoni">
+    <button matButton="filled" [disabled]="pulsanteDisabilitato" (click)="cambiaStato()">
+      {{ testoPulsante }}
+    </button>
+    <button matButton="filled" (click)="cambiaRuolo()">Cambia ruolo</button>
+  </div>
+</div>
